@@ -1,7 +1,7 @@
 [
     {
         "service_name": "Manila City",
-        "service_code": "ML",
+        "service_code": "MNL",
         "description": "Delivery fulfilled by Grab",
         "currency": "PHP"
     },

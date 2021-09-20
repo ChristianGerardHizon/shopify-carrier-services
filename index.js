@@ -36,7 +36,7 @@ app.post('/', (req, res) => {
         let timeOpening = new Date();
         timeOpening.setHours(0, 0, 0, 0);
         let timeClosing = new Date();
-        timeClosing.setHours(16, 0, 0, 0);
+        timeClosing.setHours(4, 0, 0, 0);
         let today = new Date();
         today.setHours(0, 0, 0, 0);
         
