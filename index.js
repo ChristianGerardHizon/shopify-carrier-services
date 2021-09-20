@@ -32,10 +32,15 @@ app.get('/', (req, res) => {
     res.status(200).json({ "message": "welcome" });
 
 });
+
+
+
 app.post('/', (req, res) => {
 
     let errors = null;
     let rates = null;
+    
+    console.log(jsonFile);
 
     try {
 
