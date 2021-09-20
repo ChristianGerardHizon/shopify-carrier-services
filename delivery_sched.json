@@ -1,8 +1,20 @@
 [
     {
-        "service_name": "Grab Delivery",
-        "service_code": "ON",
-        "description": "This is the fastest option by far",
+        "service_name": "Manila City",
+        "service_code": "ML",
+        "description": "Delivery fulfilled by Grab",
+        "currency": "PHP"
+    },
+    {
+        "service_name": "Las Pinas City",
+        "service_code": "LAS",
+        "description": "Delivery fulfilled by Grab",
+        "currency": "PHP"
+    },
+    {
+        "service_name": "Quezon City",
+        "service_code": "QCY",
+        "description": "Delivery fulfilled by Grab",
         "currency": "PHP"
     }
 ]

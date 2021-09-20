@@ -22,25 +22,14 @@ function calculateItems(items) {
         const item = items[index];
         total+= item.price;
     }
-    return `${total + shippingFee}`;
+    return total + shippingFee;
 }
 
 // request handlers
-
-app.get('/', (req, res) => {
-
-    res.status(200).json({ "message": "welcome" });
-
-});
-
-
-
 app.post('/', (req, res) => {
 
     let errors = null;
     let rates = null;
-    
-    console.log(jsonFile);
 
     try {
 
@@ -66,7 +55,7 @@ app.post('/', (req, res) => {
 
         let deliverTom = JSON.parse(JSON.stringify(jsonFile));
         deliverTom = deliverTom.map((data) => {
-            data.service_name = `Deliver Tommorow - ${data.service_name}`;
+            data.service_name = `Deliver Tomorrow - ${data.service_name}`;
             data.min_delivery_date = `${timeClosing.toLocaleString("sv-SE")} +0800`;
             data.max_delivery_date = `${today.toLocaleString("sv-SE")} +0800`;
             data.total_price = calculateItems(req.body.rate.items);
