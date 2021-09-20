@@ -26,6 +26,12 @@ function calculateItems(items) {
 }
 
 // request handlers
+
+app.get('/', (req, res) => {
+
+    res.status(200).json({ "message": "welcome" });
+
+});
 app.post('/', (req, res) => {
 
     let errors = null;
