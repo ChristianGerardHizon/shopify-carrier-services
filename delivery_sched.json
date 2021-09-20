@@ -8,13 +8,13 @@
     {
         "service_name": "Las Pinas City",
         "service_code": "LAS",
-        "description": "Delivery fulfilled by Grab",
+        "description": "Delivery fulfilled by LBC",
         "currency": "PHP"
     },
     {
         "service_name": "Quezon City",
         "service_code": "QCY",
-        "description": "Delivery fulfilled by Grab",
+        "description": "Delivery fulfilled by GoGo Express",
         "currency": "PHP"
     }
 ]
